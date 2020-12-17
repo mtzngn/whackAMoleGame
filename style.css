@@ -76,6 +76,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 3;
+    box-shadow: 0 2px 4px 0;
 
 }
 .ground {
@@ -85,7 +86,25 @@ h1 {
     z-index: 3;
 
 }
+button {
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    background-color: #75634e;
+    border: transparent;
+    border-radius: 10px;
+    margin: 0 0 40px 10px;
+    box-shadow: 0 4px 8px 0;
+}
 
+button:hover {
+    background-color: #4c360b;
+    box-shadow: 0 8px 16px 0;
+    transform: translateY(-3px);
+}
+button:focus {
+    background-color: #75634e;
+}
 
 @media (max-width: 450px) {
     .topWrap, .bottomWrap {
