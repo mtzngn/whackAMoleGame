@@ -67,10 +67,9 @@ h1 {
     margin-bottom: -8px;
     z-index: 2;
     transition: 1s all;
-}
-.mole:hover {
     transform: translateY(80px);
 }
+
 .dirt {
     height:85px;
     width:150px;
