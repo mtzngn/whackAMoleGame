@@ -1,22 +1,36 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Langar', cursive;
+
 }
 
 .mainWrap {
     height:100vh;
     width: 100%;
-    background-color: aqua;
+    background-color: #ebca22;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
+.header {
+    height:10%;
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    margin: 5px 0 5px 0;
+    letter-spacing: 0.07em;
+}
 .topWrap {
     height: 25%;
     width: 70%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -24,7 +38,7 @@ body {
 .bottomWrap {
     height: 25%;
     width: 70%;
-    background-color: brown;
+    /* background-color: brown; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,7 +46,7 @@ body {
 .wrap {
     height:150px;
     width:150px;
-    background-color: yellow;
+    /* background-color: yellow; */
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -56,5 +70,14 @@ body {
 .ground {
     height:10px;
     width:150px;
-    background-color: green;
+    background-color: #4c360b;
+}
+
+@media (max-width: 450px) {
+    .topWrap, .bottomWrap {
+        flex-direction: column;
+    }
+    .mainWrap {
+        flex-direction: row;
+    }
 }
