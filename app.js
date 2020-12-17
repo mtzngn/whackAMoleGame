@@ -13,5 +13,8 @@ for (let j = 0; j < moles.length; j++) {
     moles[j].addEventListener("click", ()=>{
         score++;
         document.getElementById("score").textContent  = score;
+        moles[j].style.backgroundImage = "url('./assets/mole-hit.png')"
+        setTimeout(function() {moles[j].style.backgroundImage = "url('./assets/mole.png')"}, 600);    
+
     } )
 }
