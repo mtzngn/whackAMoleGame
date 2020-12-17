@@ -80,4 +80,9 @@ h1 {
     .mainWrap {
         flex-direction: row;
     }
+    .header {
+        transform: scale(0.5);
+        align-items:flex-start;
+
+    }
 }
