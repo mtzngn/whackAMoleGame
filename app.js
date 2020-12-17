@@ -1,13 +1,13 @@
 const moles = document.getElementsByClassName("mole")
 
 
-//        moles[i].style.transform = "translateY(0px)";
-
 window.setInterval(function(){
-    randomMole();
-  }, 500);
 
-function randomMole() {
     let i = Math.floor(Math.random() * 6) ;
-    // moles[i].style.transform = "translateY(0px)";
-}
+    moles[i].style.transform = "translateY(0px)";
+    setTimeout(function() {moles[i].style.transform = "translateY(80px)"}, 1000);
+
+    
+  }, 1000);
+
+

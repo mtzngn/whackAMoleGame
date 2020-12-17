@@ -71,7 +71,7 @@ h1 {
 }
 
 .dirt {
-    height:85px;
+    height:140px;
     width:150px;
     background-image: url("./assets/soil.png");
     background-position: center;
@@ -81,7 +81,7 @@ h1 {
 
 }
 .ground {
-    height:60px;
+    height:2px;
     width:150px;
     background-color: #4c360b;
     z-index: 3;
