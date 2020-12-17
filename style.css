@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 
 }
 .header {
@@ -34,6 +35,8 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1;
+
 }
 .bottomWrap {
     height: 25%;
@@ -42,35 +45,48 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1;
+
 }
 .wrap {
-    height:150px;
+    height:210px;
     width:150px;
-    /* background-color: yellow; */
+    /* background-color: green; */
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
 }
 .mole {
-    height:100px;
+    height:110px;
     width:100px;
     background-image: url("./assets/mole.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: -8px;
+    z-index: 2;
+    transition: 1s all;
+}
+.mole:hover {
+    transform: translateY(80px);
 }
 .dirt {
-    height:40px;
+    height:85px;
     width:150px;
     background-image: url("./assets/soil.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;
+    z-index: 3;
+
+}
 .ground {
-    height:10px;
+    height:60px;
     width:150px;
     background-color: #4c360b;
+    z-index: 3;
+
 }
 
 @media (max-width: 450px) {
