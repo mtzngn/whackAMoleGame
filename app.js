@@ -1,6 +1,8 @@
 const moles = document.getElementsByClassName("mole")
 let score = 0;
 
+
+
 window.setInterval(function(){
 
     let i = Math.floor(Math.random() * 6) ;
@@ -15,6 +17,5 @@ for (let j = 0; j < moles.length; j++) {
         document.getElementById("score").textContent  = score;
         moles[j].style.backgroundImage = "url('./assets/mole-hit.png')"
         setTimeout(function() {moles[j].style.backgroundImage = "url('./assets/mole.png')"}, 600);    
-
     } )
 }
