@@ -1,5 +1,7 @@
 const moles = document.getElementsByClassName("mole")
 let score = 0;
+var kick = new Audio("./assets/kick.wav")
+
 
 document.getElementById("start").addEventListener("click", ()=>{
     window.setInterval(function(){
@@ -9,10 +11,14 @@ document.getElementById("start").addEventListener("click", ()=>{
         
       for (let j = 0; j < moles.length; j++) {
         moles[j].addEventListener("click", ()=>{
+            kick.play()
             score++;
+            document.getElementsByTagName("body")[0].style.cursor =  "url('./assets/hammer-hit.png'), default"
             document.getElementById("score").textContent  = score;
             moles[j].style.backgroundImage = "url('./assets/mole-hit.png')"
             setTimeout(function() {moles[j].style.backgroundImage = "url('./assets/mole.png')"}, 600);    
+            setTimeout(function() {document.getElementsByTagName("body")[0].style.cursor =  "url('./assets/hammer.png'), default"}, 200);    
+
             
         } )
     }
